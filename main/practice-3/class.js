@@ -1,4 +1,5 @@
 // Write your code here
+const Teacher = require('./teacher.js');
 module.exports = class Class {
 	constructor(id){
 		this.id = id;
@@ -11,6 +12,7 @@ module.exports = class Class {
 
 	appendMember(student){
 		this.students.push(student);
+		notifyStudentAppended(`${student.name} has joined Class ${student.clazz.id}`);
 	}
 
 	assignLeader(student){
@@ -21,6 +23,7 @@ module.exports = class Class {
 		}
 		else
 			feadback = 'It is not one of us.';
-		console.log(feadback);
+		// console.log(feadback);
+		return feadback;
 	}
 }
