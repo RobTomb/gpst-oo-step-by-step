@@ -5,6 +5,6 @@ module.exports = class Worker extends Person{
 		super(name,age);
 	}
 	introduce(){
-		return `My name is ${this.name}. I am ${this.age} years old. I am a ${Worker.name}. I have a job.`;
+		return `${this.basicIntroduce()} I am a ${Worker.name}. I have a job.`;
 	}
 }

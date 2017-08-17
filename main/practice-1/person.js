@@ -4,7 +4,10 @@ module.exports = class Person {
 		this.name = name;
 		this.age = age;
 	}
+	basicIntroduce(){
+		return `My name is ${this.name}. I am ${this.age} years old.`;
+	}
 	introduce(){
-		return `My name is ${this.name}. I am ${this.age} years old.`
+		return this.basicIntroduce();
 	}
 }
