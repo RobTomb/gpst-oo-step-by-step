@@ -16,8 +16,12 @@ module.exports = class Teacher extends Person{
 		return flag;
 	}
 	
-	notifyStudentAppended(){
-		
+	notifyStudentAppended(info){
+		console.log(info);
+	}
+
+	notifyLeaderAssigned(info){
+		console.log(info);
 	}
 
 	introduce(){
